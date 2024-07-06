@@ -2,7 +2,14 @@
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        cb: ["'CabinetGrotesk-Regular'"],
+      },
+      colors: {
+        db: "#005DA1",
+      },
+    },
   },
   plugins: [],
 };
