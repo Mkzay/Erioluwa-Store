@@ -6,6 +6,7 @@ const Cart = ({
   decrementQuantity,
   removeFromCart,
   toggleCart,
+  showPaymentMethod,
 }) => {
   return (
     <div className="cart absolute top-[62px] flex flex-col gap-7 bg-white w-full h-full px-[32px] font-cb">
@@ -59,7 +60,10 @@ const Cart = ({
         <button className="rounded-[50px] border border-db text-db bg-white h-12 w-40">
           Cancel
         </button>
-        <button className="rounded-[50px] bg-db text-white h-12 w-40">
+        <button
+          className="rounded-[50px] bg-db text-white h-12 w-40"
+          onClick={showPaymentMethod}
+        >
           Confirm
         </button>
       </div>

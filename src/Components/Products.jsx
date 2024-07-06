@@ -1,11 +1,15 @@
-import { useState } from "react";
+/* eslint-disable no-unused-vars */
+import  { useState } from "react";
 import productData from "./productData";
 import Cart from "./Cart";
+import Checkout from "./Checkout";
 
 const Products = () => {
   const [quantities, setQuantities] = useState(productData.map(() => 1));
   const [cartItems, setCartItems] = useState([]);
   const [isCartVisible, setIsCartVisible] = useState(false);
+  const [isPaymentMethodVisible, setIsPaymentMethodVisible] = useState(false);
+  const [selectedPaymentMethod, setSelectedPaymentMethod] = useState(null);
 
   const incrementQuantity = (index) => {
     setQuantities((prevQuantities) => {
@@ -39,7 +43,7 @@ const Products = () => {
         return [...prevCartItems, { ...product, quantity }];
       }
     });
-    setIsCartVisible(true); // Show cart when an item is added
+    setIsCartVisible(true);
   };
 
   const removeFromCart = (index) => {
@@ -79,6 +83,16 @@ const Products = () => {
 
   const toggleCart = () => {
     setIsCartVisible(!isCartVisible);
+  };
+
+  const handlePaymentMethodSelected = (paymentData) => {
+    setSelectedPaymentMethod(paymentData);
+    setIsPaymentMethodVisible(false);
+  };
+
+  const showPaymentMethod = () => {
+    setIsCartVisible(false); // Hide cart when proceeding to payment
+    setIsPaymentMethodVisible(true);
   };
 
   return (
@@ -128,7 +142,11 @@ const Products = () => {
           decrementQuantity={decrementCartQuantity}
           removeFromCart={removeFromCart}
           toggleCart={toggleCart}
+          showPaymentMethod={showPaymentMethod}
         />
+      )}
+      {isPaymentMethodVisible && (
+        <Checkout onPaymentMethodSelected={handlePaymentMethodSelected} />
       )}
     </div>
   );
