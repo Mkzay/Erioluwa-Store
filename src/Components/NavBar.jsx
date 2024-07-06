@@ -7,8 +7,8 @@ const NavBar = () => {
   };
 
   return (
-    <div className="mt-[3.875rem] pl-7 pr-[1.875rem] flex items-center justify-center gap-[7.3125rem] w-full">
-      <h1 className="text-db text-3xl/[37.2px] font-bold">Erioluwa Store</h1>
+    <div className="mt-[3.875rem] pl-7 pr-[1.875rem] flex items-center justify-center gap-[7.3125rem] w-full font-cb">
+      <h1 className="text-db text-2xl/[37.2px]">Erioluwa Store</h1>
       <button onClick={handleMenu}>
         <img src="/menu.svg" alt="menu bar" />
       </button>

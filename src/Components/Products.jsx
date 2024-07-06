@@ -19,7 +19,7 @@ const Products = () => {
   };
 
   return (
-    <div className="mt-[53px] flex items-center justify-center flex-wrap gap-4">
+    <div className="mt-[53px] pb-60 flex items-center justify-center flex-wrap gap-4 font-cb">
       {productData.map((product, index) => (
         <div
           key={index}
@@ -29,13 +29,21 @@ const Products = () => {
             <img src={product.image} alt={product.title} className="h-[88px]" />
           </div>
           <div className="mt-[9px]">
-            <span className="text-[10px]/[12.4px]">{product.status}</span>
+            <span
+              className={`text-[10px]/[12.4px] ${
+                product.status === "In-stock" || product.status === "New stock"
+                  ? "text-green-500"
+                  : "text-red-500"
+              }`}
+            >
+              {product.status}
+            </span>
             <h1 className="text-[15px]/[18.6px] text-db">{product.title}</h1>
             <p className="text-[15px]/[18.6px] text-[#787878]">
               {product.price}
             </p>
           </div>
-          <div className="mt-[13px] w-[129px] h-[29px] rounded-[5px] bg-gray-300 text-[#535353] text-[10px]/[12.21px] flex items-center gap-6 py-2 pl-[15px] pr-[7.67px]">
+          <div className="mt-[13px] w-[129px] h-[29px] rounded-[5px] bg-gray-300 text-[#535353] text-[10px]/[12.21px] flex items-center gap-5 py-2 pl-[15px] pr-[7.67px] font-hn">
             <button>Add to cart</button>
             <div className="flex gap-2">
               <button onClick={() => decrementQuantity(index)}>-</button>

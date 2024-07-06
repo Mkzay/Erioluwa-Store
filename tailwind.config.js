@@ -4,7 +4,8 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        cb: ["'CabinetGrotesk-Regular'"],
+        cb: ["'CabinetGrotesk'", "sans-serif"],
+        hn: ["'HelveticaNeue'", "sans-serif"],
       },
       colors: {
         db: "#005DA1",
