@@ -15,3 +15,10 @@
   font-weight: 500;
   font-style: normal;
 }
+
+@font-face {
+  font-family: "TrajanPro";
+  src: url("fonts/TrajanPro-Regular.ttf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+}

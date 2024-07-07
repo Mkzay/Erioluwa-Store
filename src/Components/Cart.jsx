@@ -9,7 +9,7 @@ const Cart = ({
   showPaymentMethod,
 }) => {
   return (
-    <div className="cart absolute top-[62px] flex flex-col gap-7 bg-white w-full h-full px-[32px] font-cb">
+    <div className="cart fixed top-0 pt-[62px] flex flex-col gap-7 bg-white w-full h-full px-[32px] font-cb">
       <div className="flex items-center justify-between w-full">
         <img src="/back.svg" alt="back" onClick={toggleCart} />
         <div className="flex items-center">
@@ -41,8 +41,13 @@ const Cart = ({
                 <span className="text-[15px]/[18.6px] text-[#787878]">
                   {item.price}
                 </span>
-                <div className="mt-2 flex gap-2">
-                  <button onClick={() => removeFromCart(index)}>Remove</button>
+                <div className="mt-[13px] w-[129px] h-[29px] rounded-[5px] bg-[#23232340]/10 text-[#535353] text-[11px]/[12.21px] flex items-center justify-center gap-4 py-2 ">
+                  <button
+                    className="underline"
+                    onClick={() => removeFromCart(index)}
+                  >
+                    Remove
+                  </button>
                   <button onClick={() => decrementQuantity(index)}>-</button>
                   <span>{item.quantity}</span>
                   <button onClick={() => incrementQuantity(index)}>+</button>

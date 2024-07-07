@@ -40,8 +40,11 @@ const Checkout = ({ onPaymentMethodSelected }) => {
   return (
     <form
       onSubmit={handleSubmit}
-      className="p-4 bg-white rounded-lg shadow-md absolute top-[62px] w-full h-full font-cb hidden"
+      className="p-4 bg-white rounded-lg shadow-md fixed top-0 pt-[62px] w-full h-full font-cb"
     >
+      <button className="mb-[25px]">
+        <img src="/back.svg" alt="back" />
+      </button>
       <h2 className="text-xl/[24.8px] text-[#00477B] font-semibold mb-4">
         Choose Payment Method
       </h2>
