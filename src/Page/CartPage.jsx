@@ -68,11 +68,11 @@ const CartPage = () => {
                     <img
                       src={item.product.image}
                       alt={item.product.title}
-                      className="h-[75px]"
+                      className="w-full"
                     />
                   </div>
-                  <div className="flex justify-between items-center flex-grow">
-                    <span className="text-[15px]/[18.6px] text-db">
+                  <div className="flex justify-between gap-10 items-center flex-grow">
+                    <span className="text-[15px]/[18.6px] text-db mr-2">
                       {item.product.title}
                       <span className="text-sm text-black">
                         {" "}
