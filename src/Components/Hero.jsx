@@ -11,11 +11,11 @@ const Hero = () => {
         src="Imgs/desk.png"
         alt="product image"
       />
-      <div className="z-20 mt-[307px] px-4 text-white lg:[159px] lg:pl-[68px] lg:pr-[60px] ">
+      <div className="z-20 mt-[307px] px-4 text-white lg:[159px] lg:pl-[68px] lg:pr-[60px] lg:w-[1137px]">
         <h1 className="font-tp  text-[46px]/[55.2px] mb-4 lg:pr-[482px] lg:mb-[79px]">
           Discover Timeless Elegant Luxury Men&apos;s Brogues
         </h1>
-        <p className="font-cb text-xl/[24.8px] mb-8 lg:pr-[821px]">
+        <p className="font-cb text-xl/[24.8px] mb-8 lg:pr-[690px]">
           Our exclusive collection of executive men&apos;s brogues, crafted to
           elevate your style effortlessly.
         </p>

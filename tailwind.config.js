@@ -5,6 +5,7 @@ export default {
     extend: {
       fontFamily: {
         cb: ["'CabinetGrotesk'", "sans-serif"],
+        cb1: ["'CabinetGroteskR'", "sans-serif"],
         hn: ["'HelveticaNeue'", "sans-serif"],
         tp: ["'TrajanPro'", "sans-serif"],
       },
