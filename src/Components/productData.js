@@ -17,7 +17,7 @@ const productData = [
     title: "Oxford Black",
     price: "₦320,000",
     image: "/OxfordBlack.png",
-    status: "Sold out",
+    status: "In-stock",
     description1:
       "Timeless and elegant, our Oxford dress shoe is crafted from premium leather, offering unpara-lleled comfort and sophistication",
     description2: "Genuine leather durability and breathability",
@@ -30,6 +30,7 @@ const productData = [
     title: "Italian Black",
     price: "₦106,000",
     image: "/ItalianBlack.png",
+    status: "In-stock",
     description1:
       "Timeless and elegant, our Oxford dress shoe is crafted from premium leather, offering unpara-lleled comfort and sophistication",
     description2: "Genuine leather durability and breathability",
@@ -55,7 +56,7 @@ const productData = [
     title: "Oxford Black",
     price: "₦600,000",
     image: "/OxfordBlack.png",
-    status: "Sold out",
+    status: "In-stock",
     description1:
       "Timeless and elegant, our Oxford dress shoe is crafted from premium leather, offering unpara-lleled comfort and sophistication",
     description2: "Genuine leather durability and breathability",
@@ -68,6 +69,7 @@ const productData = [
     title: "Italian Black",
     price: "₦190,000",
     image: "/ItalianBlack.png",
+    status: "In-stock",
     description1:
       "Timeless and elegant, our Oxford dress shoe is crafted from premium leather, offering unpara-lleled comfort and sophistication",
     description2: "Genuine leather durability and breathability",

@@ -3,7 +3,7 @@ import productData from "./productData";
 
 const Featured = () => {
   return (
-    <div className="mt-[150px] px-4 z-20 flex flex-col items-center justify-center gap-10 lg:mt-[300px] xl:px-20 lg:items-start lg:pl-[105px] lg:pr-[87px]">
+    <div className="mt-[150px] px-4 z-20 flex flex-col items-center justify-center gap-10 md:mt-[340px] lg:mt-[300px] xl:px-20 lg:items-start lg:pl-[105px] lg:pr-[87px]">
       <h1 className="text-[40px]/[40px] font-tp text-black lg:text-[80px]/[80px]">
         Featured Products
       </h1>

@@ -40,7 +40,7 @@ const Checkout = ({ onPaymentMethodSelected }) => {
   return (
     <form
       onSubmit={handleSubmit}
-      className="p-4 bg-white rounded-lg shadow-md fixed top-0 left-0 pt-[70px] font-cb h-full w-full overflow-auto lg:w-[478px] lg:shadow-xl lg:h-[746px] lg:top-20 lg:left-[30rem] lg:rounded-[50px] lg:backdrop-filter lg:backdrop-blur-3xl lg:overflow-y-auto lg:flex items-center flex-col"
+      className="p-4 bg-white rounded-lg shadow-md fixed top-0 left-0 pt-[70px] font-cb h-full w-full overflow-auto lg:w-[478px] lg:shadow-xl lg:h-screen lg:top-10 lg:left-[30rem] lg:rounded-[50px] lg:backdrop-filter lg:backdrop-blur-3xl lg:overflow-y-auto lg:flex items-center flex-col"
     >
       <button className="mb-[25px] lg:hidden">
         <img src="/back.svg" alt="back" />

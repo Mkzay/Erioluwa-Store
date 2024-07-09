@@ -1,4 +1,6 @@
 /* eslint-disable react/prop-types */
+import { Link } from "react-router-dom";
+
 const MobileMenu = ({ menu, handleMenu }) => {
   return (
     <div
@@ -15,8 +17,12 @@ const MobileMenu = ({ menu, handleMenu }) => {
         <button onClick={handleMenu}>X</button>
       </div>
       <ul className="flex flex-col items-center gap-2.5 text-3xl/[37.2px] font-bold">
-        <li>Home</li>
-        <li>Cart</li>
+        <Link to="/">
+          <li>Home</li>
+        </Link>
+        <Link to="/cart">
+          <li>Cart</li>
+        </Link>
         <li>Support</li>
         <li>FAQs</li>
       </ul>

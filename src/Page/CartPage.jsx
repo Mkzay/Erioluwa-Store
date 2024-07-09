@@ -17,9 +17,6 @@ const CartPage = () => {
   const [showSuccess, setShowSuccess] = useState(false);
   const navigate = useNavigate();
 
-  const handleBackClick = () => {
-    navigate(-1);
-  };
 
   const showPaymentMethod = () => {
     setShowCheckout(true);
@@ -47,14 +44,6 @@ const CartPage = () => {
         />
       ) : (
         <>
-          <div className="flex items-center justify-between w-full lg:hidden">
-            <img src="/back.svg" alt="back" onClick={handleBackClick} />
-            <div className="flex items-center">
-              <h1 className="text-3xl/[37.2px] text-db">Cart</h1>
-              <img src="/cart.svg" alt="cart" />
-            </div>
-            <img src="/menu.svg" alt="menu" />
-          </div>
           <div className="flex items-center flex-col gap-5">
             {cart.length === 0 ? (
               <p className="text-lg text-gray-500">Your cart is empty</p>
